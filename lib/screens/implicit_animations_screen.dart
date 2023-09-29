@@ -29,6 +29,7 @@ class _ImplicitAnimationsScreenState extends State<ImplicitAnimationsScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            /*
             TweenAnimationBuilder(
               // tween: Tween(begin: 10.0, end: 20.0),
               tween: ColorTween(begin: Colors.purple, end: Colors.red),
@@ -42,7 +43,8 @@ class _ImplicitAnimationsScreenState extends State<ImplicitAnimationsScreen> {
                 );
               },
             ),
-            /*
+            */
+
             AnimatedContainer(
               duration: const Duration(seconds: 2),
               curve: Curves.elasticOut,
@@ -55,7 +57,6 @@ class _ImplicitAnimationsScreenState extends State<ImplicitAnimationsScreen> {
                 borderRadius: BorderRadius.circular(_visible ? 100 : 0),
               ),
             ),
-            */
 
             /*
             AnimatedAlign(
