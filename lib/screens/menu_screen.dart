@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation_masterclass/screens/apple_watch_screen.dart';
+import 'package:flutter_animation_masterclass/screens/custom_rive2_screen.dart';
+import 'package:flutter_animation_masterclass/screens/custom_rive_screen.dart';
 import 'package:flutter_animation_masterclass/screens/explicit_animations_screen.dart';
 import 'package:flutter_animation_masterclass/screens/implicit_animations_screen.dart';
 import 'package:flutter_animation_masterclass/screens/music_player_screen.dart';
+import 'package:flutter_animation_masterclass/screens/rive_screen.dart';
 import 'package:flutter_animation_masterclass/screens/swiping_cards_screen.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -70,6 +73,33 @@ class MenuScreen extends StatelessWidget {
                 );
               },
               child: const Text("Music Player"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const RiveScreen(),
+                );
+              },
+              child: const Text("Rive"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const CustomRiveScreen(),
+                );
+              },
+              child: const Text("Custom Rive"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const CustomRive2Screen(),
+                );
+              },
+              child: const Text("Custom Rive 2"),
             ),
           ],
         ),
