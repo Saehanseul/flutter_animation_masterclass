@@ -8,8 +8,10 @@ import 'package:flutter_animation_masterclass/screens/explicit_animations_screen
 import 'package:flutter_animation_masterclass/screens/fade_through_screen.dart';
 import 'package:flutter_animation_masterclass/screens/implicit_animations_screen.dart';
 import 'package:flutter_animation_masterclass/screens/music_player_screen.dart';
+import 'package:flutter_animation_masterclass/screens/pomodoro_screen.dart';
 import 'package:flutter_animation_masterclass/screens/rive_screen.dart';
 import 'package:flutter_animation_masterclass/screens/shared_axis_screen.dart';
+import 'package:flutter_animation_masterclass/screens/rotating_and_swiping_cards_screen.dart';
 import 'package:flutter_animation_masterclass/screens/swiping_cards_screen.dart';
 import 'package:flutter_animation_masterclass/screens/wallet_screen.dart';
 
@@ -119,10 +121,10 @@ class MenuScreen extends StatelessWidget {
               onPressed: () {
                 _goToPage(
                   context,
-                  const ContainerTransformScreen(),
+                  const PomodoroScreen(),
                 );
               },
-              child: const Text("Container Transform"),
+              child: const Text("Pomodoro"),
             ),
             ElevatedButton(
               onPressed: () {
@@ -132,6 +134,24 @@ class MenuScreen extends StatelessWidget {
                 );
               },
               child: const Text("Shared Axis"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const RotatingAndSwipingCardsScreen(),
+                );
+              },
+              child: const Text("card"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const ContainerTransformScreen(),
+                );
+              },
+              child: const Text("Container Transform"),
             ),
             ElevatedButton(
               onPressed: () {
