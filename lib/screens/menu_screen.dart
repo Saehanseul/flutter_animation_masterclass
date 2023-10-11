@@ -4,6 +4,7 @@ import 'package:flutter_animation_masterclass/screens/container_transform_screen
 import 'package:flutter_animation_masterclass/screens/custom_rive2_screen.dart';
 import 'package:flutter_animation_masterclass/screens/custom_rive_screen.dart';
 import 'package:flutter_animation_masterclass/screens/explicit_animations_screen.dart';
+import 'package:flutter_animation_masterclass/screens/fade_through_screen.dart';
 import 'package:flutter_animation_masterclass/screens/implicit_animations_screen.dart';
 import 'package:flutter_animation_masterclass/screens/music_player_screen.dart';
 import 'package:flutter_animation_masterclass/screens/rive_screen.dart';
@@ -120,6 +121,15 @@ class MenuScreen extends StatelessWidget {
                 );
               },
               child: const Text("Shared Axis"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const FadeThroughScreen(),
+                );
+              },
+              child: const Text("Fade through"),
             ),
           ],
         ),
