@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   lottie: ^2.6.0
   rive: ^0.11.17
+  animations: ^2.0.8
 
 dev_dependencies:
   flutter_test:

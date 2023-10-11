@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animation_masterclass/screens/apple_watch_screen.dart';
+import 'package:flutter_animation_masterclass/screens/container_transform_screen.dart';
 import 'package:flutter_animation_masterclass/screens/custom_rive2_screen.dart';
 import 'package:flutter_animation_masterclass/screens/custom_rive_screen.dart';
 import 'package:flutter_animation_masterclass/screens/explicit_animations_screen.dart';
@@ -100,6 +101,15 @@ class MenuScreen extends StatelessWidget {
                 );
               },
               child: const Text("Custom Rive 2"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _goToPage(
+                  context,
+                  const ContainerTransformScreen(),
+                );
+              },
+              child: const Text("Container Transform"),
             ),
           ],
         ),
